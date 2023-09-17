@@ -18,8 +18,61 @@ document.getElementById("pickRandom").addEventListener("click", function() {
 
             // Display the randomly chosen name
             document.getElementById("randomName").textContent = randomName;
+            document.getElementById("resultHeader").classList.remove("hidden");
         })
         .catch(error => {
             console.error('Error fetching the list of names:', error);
         });
+
+        
+        
 });
+
+
+
+ // Array of random choices
+ const choices = [
+    "OH, HOW ABOUT SOME FUCKING",
+    "YOU READY FOR SOME FUCKING",
+    "WATCH SOME FUCKING",
+    "GET YOUR N-PASS READY AND FEAST YOUR EYES ON THIS",
+    "LET'S MOSEY!",
+    "YOU HAVEN'T SEEN DEATH NOTE?! AT LEAST WATCH THIS",
+    "THE RACE WAR STARTS NOOOOW!!!",
+    "*throws swastika fireball*",
+    "YOU THINK YOUR DAD BEAT YOU? GET READY FOR THIS",
+    "THE GAMECUBE WAS GREAT, FUCK YOU!",
+    "ALWAYS ROTATE YOUR SAVES! OH AND WATCH SOME FUCKING",
+    "THERE'S NOT TIME! WATCH SOME FUCKING",
+    "DROP YOUR SHIELD AND WATCH SOME FUCKING",
+    "WATCH THIS MYSTERIOUS JOGO",
+    "WANNA GET GREASY? THEN WATCH SOME",
+    "GIRLS ARE WATCHING",
+    "THIS IS THE HYPEST SHIT!",
+    // Add more choices as needed
+];
+
+document.getElementById("pickRandom").addEventListener("click", function() {
+    // Randomly select a choice from the array
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    const randomChoice = choices[randomIndex];
+
+    // Set the randomly chosen choice as the text of the <h2> element
+    document.getElementById("resultHeader").textContent = randomChoice;
+
+    // Show the <h2> element when the button is clicked
+    document.getElementById("resultHeader").classList.remove("hidden");
+
+    
+});
+
+// Function to handle the initial click
+function handleInitialClick() {
+    // Change the text when clicked for the first time
+    document.getElementById("pickRandom").textContent = "FUCK THAT. I'M NOT WATCHING THAT SHIT.";
+    // Remove the click event listener so it doesn't change again
+    document.getElementById("pickRandom").removeEventListener("click", handleInitialClick);
+}
+
+// Add a click event listener to the "pickRandom" div
+document.getElementById("pickRandom").addEventListener("click", handleInitialClick);
