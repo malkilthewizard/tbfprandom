@@ -71,7 +71,7 @@ document.getElementById("pickRandom").addEventListener("click", function() {
 // Function to handle the initial click
 function handleInitialClick() {
     // Change the text when clicked for the first time
-    document.getElementById("pickRandom").textContent = "FUCK THAT. I'M NOT WATCHING THAT SHIT.";
+    document.getElementById("pickRandom").textContent = "FUCK THAT. RECOMMEND ME SOMETHING ELSE.";
     // Remove the click event listener so it doesn't change again
     document.getElementById("pickRandom").removeEventListener("click", handleInitialClick);
 }
