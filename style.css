@@ -10,11 +10,11 @@
         color: rgb(209, 209, 209);
         padding-bottom: 50px;
         background-color: rgb(7, 7, 7);
-        /* background-image: url('bg.jpg'); */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         backdrop-filter: blur(20px);
+        font-weight: normal;
     }
 
     .button-container {
@@ -24,7 +24,6 @@
 
     #resultHeader {
         position: absolute;
-        font-weight: lighter;
         font-size: 80px;
         transform: translateX(-50%);
         width: 1000px;
@@ -41,9 +40,7 @@
         transform: translateX(-50%); /* Center the text horizontally */
         font-size: 80px;
         color: rgb(209, 209, 209);
-        font-weight: bolder;
         border: none;
-        font-weight: normal;
         width: 1000px;
         cursor: pointer;
         text-align: center;
@@ -68,7 +65,7 @@
             left: 50%;
             width: 1000px;
             transform: translateX(-50%);
-        font-weight: normal;        
+         
     }
         
         .result-container {
@@ -82,7 +79,7 @@
         }
         
 
-        h2.hidden {
+        #resultHeader.hidden {
             display: none;
         }
     
