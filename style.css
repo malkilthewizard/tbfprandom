@@ -5,9 +5,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0; /* Replace with your preferred background color */
-        background-image: url('bg.jpg'); /* Replace with the path to your background image */
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        color: rgb(209, 209, 209);
+        padding-bottom: 50px;
+        background-color: rgb(7, 7, 7);
+        /* background-image: url('bg.jpg'); */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -19,12 +22,38 @@
         margin-bottom: 20px;
     }
 
+    #resultHeader {
+        position: absolute;
+        font-weight: lighter;
+        font-size: 80px;
+        transform: translateX(-50%);
+        width: 1000px;
+        top: 0%;
+        left: 50%;
+
+    }
+
     #pickRandom {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
+        position: absolute;
+        padding: 0px 20px;
+        bottom: 20px;
+        left: 50%; /* Position the text horizontally in the center */
+        transform: translateX(-50%); /* Center the text horizontally */
+        font-size: 80px;
+        color: rgb(209, 209, 209);
+        font-weight: bolder;
         border: none;
+        font-weight: normal;
+        width: 1000px;
         cursor: pointer;
+        text-align: center;
+        user-select: none; /* Prevent text selection */
+        transition: background-color 0.3s ease; /* Add a transition for button click effect */
+
+    }
+
+    #pickRandom:hover {
+        text-decoration: underline; /* Add an underline on hover to indicate it's clickable */
     }
 
     .result-container {
@@ -32,22 +61,28 @@
     }
     
     #randomName {
-            font-size: 24px;
-            font-weight: bold;
-            color: rgb(0, 123, 255);
-        }
+            font-size: 80px;
+            color: rgb(209, 209, 209);
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 1000px;
+            transform: translateX(-50%);
+        font-weight: normal;        
+    }
         
         .result-container {
-            background-color: rgba(255, 255, 255, 0.048); /* Adjust the opacity by changing the last value (0.8) */
+            background-color: rgb(7, 7, 7);
             padding: 20px;
-            border-radius: 30px;
             text-align: center;
-            width: 500px;
-            height: 300px;
-            border: 2px solid #000000; /* Add a border with your preferred color */
-
+            width: 1000px;
+            height: 1000px;
+            position: relative;
+            
         }
+        
 
-    h1 {
-        color: rgb(0, 0, 0);
-    }
+        h2.hidden {
+            display: none;
+        }
+    
