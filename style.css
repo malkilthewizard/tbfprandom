@@ -7,7 +7,7 @@
         align-items: center;
         font-family: Arial, sans-serif;
         background-color: #f0f0f0; /* Replace with your preferred background color */
-        background-image: url('/tbfprandompicker/resources/bg.jpg'); /* Replace with the path to your background image */
+        background-image: url('bg.jpg'); /* Replace with the path to your background image */
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
