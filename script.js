@@ -39,7 +39,6 @@ document.getElementById("pickRandom").addEventListener("click", function() {
     "LET'S MOSEY!",
     "YOU HAVEN'T SEEN DEATH NOTE?! AT LEAST WATCH THIS",
     "THE RACE WAR STARTS NOOOOW!!!",
-    "*throws swastika fireball*",
     "YOU THINK YOUR DAD BEAT YOU? GET READY FOR THIS",
     "THE GAMECUBE WAS GREAT, FUCK YOU!",
     "ALWAYS ROTATE YOUR SAVES! OH AND WATCH SOME FUCKING",
@@ -51,6 +50,15 @@ document.getElementById("pickRandom").addEventListener("click", function() {
     "THIS IS THE HYPEST SHIT!",
     "HE LOVES IT! DO YOU?",
     "YUCK IT UP WHILE WATCHING SOME",
+    "WHAT A MYSTERIOUS GAME",
+     "IT'S FINE",
+     "THE SEA IS BASICALLY THE SKY OF THE GROUND",
+     "YOU'RE DEAD INSIDE, YOU CAN WATCH ANYTHING NOW! SO WATCH SOME FUCKING",
+     "DON'T WORRY ABOUT IT",
+     "DON'T LET IT SET IN",
+     "IT'S SETTING IN",
+     "YOUR NECK IS ITCHY"
+     
     // Add more choices as needed
 ];
 
